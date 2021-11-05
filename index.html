@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag Race</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 
+- Criar um HTML com um <h1> Drag Race </h1>;
+- Em um form, inserir um input para inserir o nome do competidor
+- Abaixo desse input, inserir um botão Start e um botão Stop
+- O botão Start deve disparar um cronometro e o botão Stop deve parar o cronometro, e inserir em uma sita do HTML o nome do competidor e o tempo dele.
+- Todos os competidores e seus tempos devem ficar armazenados em Storage temporário e somente o mais rápido deve ficar em Storage permanente 
+     -->
+
+    <div class="container">
+      <h1>Drag Race - Natalia Martineli</h1>
+      <form>
+        <label>Insira o nome do competidor</label>
+        <input type="text" required class="username" />
+        <div class="buttons">
+          <button id="start" type="submit">Start</button>
+          <button id="stop" type="button" onclick="stopTimer()">Stop</button>
+          <button id="clear" type="button" onclick="clearTimer()">Clear</button>
+        </div>
+      </form>
+      <div class="timer">00:00:00</div>
+      <h2>Resultados</h2>
+      <ul></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
